@@ -9,12 +9,13 @@ const JoinCommunity = () => {
           <div className="justin-community--wrapper">
             <div className="justin-community--title-header">
               <h2>
-                <span>Join</span> Justin's Community
+                <span>{`Join`}</span>
+                {` Justin's Community`}
               </h2>
               <p>
-                Discover a community built on the foundation of perseverance.
+                {`Discover a community built on the foundation of perseverance.
                 Join us and connect with fellow individuals who share the spirit
-                of relentless determination.
+                of relentless determination.`}
               </p>
             </div>
             <div className="justin-community--community-list">

@@ -46,7 +46,8 @@ const OrderYourBook = () => {
           <div className="justin-order-your-book--section-wrapper">
             <div className="justin-order-your-book--header-title">
               <h2>
-                <span>Order Your Book </span>'You Are Not Your Past'
+                <span>Order Your Book </span>
+                {`'You Are Not Your Past'`}
               </h2>
             </div>
             <div className="justin-order-your-book--book-wrapper">

@@ -41,11 +41,11 @@ const Achieving = () => {
         <Container>
           <div className="justin-achiving--section-wrapper">
             <div className="justin-achiving--title-wrapper">
-              <h5>Six Powerful 'Ps' for Achieving Success</h5>
+              <h5>{`Six Powerful 'Ps' for Achieving Success`}</h5>
               <p>
-                Join me in learning how to push forward to success, embrace
+                {`Join me in learning how to push forward to success, embrace
                 fear, stay humble and drive huge personal growth. Your journey
-                to greatness begins here.
+                to greatness begins here.`}
               </p>
             </div>
             <div className="justin-achiving--powerful-Achiev-list">

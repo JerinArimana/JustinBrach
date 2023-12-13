@@ -24,21 +24,20 @@ const About = () => {
               <div className="justin-about--content">
                 <h2>About</h2>
                 <p>
-                  I am the CEO of three companies dedicated to making a
+                  {`I am the CEO of three companies dedicated to making a
                   difference: Solar Quote, SubcontractorHub, and ExpansionJS.
                   Our focus is on providing solutions for consumers and
                   contractors that create efficient processes, aiming to
                   collapse timelines and reduce costs. I firmly believe in the
-                  power of persevering through all obstacles to achieve success.
+                  power of persevering through all obstacles to achieve success.`}
                 </p>
                 <p>
-                  {" "}
-                  My goal is to positively impact the lives of one billion
+                  {`My goal is to positively impact the lives of one billion
                   people. Being passionate about health and wellbeing, I have
                   authored the book "You Are Not Your Past," and developed an
                   app, MustMotivate. These platforms bring together tools for
                   awareness, metrics for health, and resources to build
-                  communities focused on wellbeing.
+                  communities focused on wellbeing.`}
                 </p>
               </div>
             </Col>

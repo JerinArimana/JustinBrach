@@ -14,13 +14,14 @@ const Redefine = () => {
                 subTitle="In My World, Mistakes Are Mere Footnotes. Unshakable Perseverance Writes the Tale"
               />
               <p>
-                <span>"You Are Not Your Past" </span>is a riveting chronicle of
+                <span>{`"You Are Not Your Past"`} </span>
+                {`is a riveting chronicle of
                 conquering fear, harnessing the power of perseverance, and
                 achieving unparalleled success. In a world where tenacity
-                prevails, my story is a classic example for the same
+                prevails, my story is a classic example for the same`}
               </p>
               <div className="redefine-justin--label">
-                IF I CAN DO IT, SO CAN YOU!
+                {`IF I CAN DO IT, SO CAN YOU!`}
               </div>
               <button className="button justin-youTube--button">
                 Pre-Order Now
