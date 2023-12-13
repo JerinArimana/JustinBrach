@@ -9,6 +9,19 @@
     padding-top: 2.31rem;
     padding-bottom: 2.94rem;
   }
+  @media ($small) {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  @media ($medium) {
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+  }
+  @media ($large) {
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+  }
   &--section-wrapper {
     @include dflex(flex, center, space-between);
     gap: 6.19rem;
@@ -16,7 +29,14 @@
   &--about-image {
     position: relative;
     z-index: 2;
-
+    @media ($mobile) {
+      max-width: 250px;
+      margin: 0 auto;
+    }
+    @media ($small) {
+      max-width: 300px;
+      margin: 0 auto;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -37,7 +57,7 @@
     }
   }
   &--content > p {
-    margin-top: 30px;
+    margin-bottom: 30px;
   }
   &--content {
     color: $white;
@@ -49,21 +69,53 @@
     }
     @media ($small) {
       padding-left: 0rem;
+      padding-top: 3rem;
+    }
+    @media ($medium) {
+      padding-left: 1rem;
+      padding-top: 0rem;
     }
     h2 {
       @include fontSpecs(4.125rem, 700, $white, 4.0625rem, initial);
       margin-bottom: 3rem;
       @media ($mobile) {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         margin-top: 2rem;
-        font-size: 2.5rem;
+        font-size: 1.7rem;
+      }
+      @media ($small) {
+        font-size: 2rem;
+        line-height: 2.3rem;
+        margin-bottom: 1rem;
+      }
+      @media ($medium) {
+        line-height: 2rem;
+        font-size: 2.3rem;
+        margin-bottom: 1rem;
+      }
+      @media ($large) {
+        line-height: 2rem;
+        font-size: 2.3rem;
+        margin-bottom: 1rem;
       }
     }
     p {
       @include fontSpecs(1.6rem, 400, $white, 2.6875rem, initial);
       font-family: $secondary-font;
       @media ($mobile) {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+      @media ($small) {
+        font-size: 1.3rem;
+        line-height: 2rem;
+      }
+      @media ($medium) {
+        font-size: 1rem;
+        line-height: 2rem;
+      }
+      @media ($large) {
+        font-size: 1rem;
         line-height: 2rem;
       }
     }

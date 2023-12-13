@@ -2,29 +2,64 @@
   &--wrapper {
     padding: 0 45px;
     @include dflex(flex, center, space-between);
-    @media ($upto-medium) {
+    @media ($upto-small) {
       flex-direction: column;
       padding: 0rem;
+      margin-top: 7rem;
     }
     @media ($large) {
       padding: 0rem;
+    }
+    @media ($medium) {
+      //padding: 0 25px;
+      flex-direction: row;
     }
   }
   &--content-wrapper {
     max-width: 640px;
-    @media ($upto-medium) {
+    @media ($mobile) {
       max-width: 100%;
       order: 2;
+      text-align: center;
     }
     @media ($large) {
-      max-width: 100%;
+      max-width: 550px;
+    }
+    @media ($small) {
+      margin-top: 5rem;
+      text-align: center;
+      order: 2;
+    }
+    @media ($medium) {
+      max-width: 350px;
+      padding-right: 10px;
+    }
+    @media ($xl) {
+      width: calc(100% - 595px);
     }
     p {
       @include fontSpecs(2rem, 400, $senary-color, 2.6875rem, initial);
       margin-bottom: 2.56rem;
       font-family: $secondary-font;
       @media ($mobile) {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      @media ($small) {
+        font-size: 1.3rem;
+        line-height: 2rem;
+        margin-bottom: 2rem;
+      }
+      @media ($medium) {
+        line-height: 2rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+      @media ($large) {
+        line-height: 2rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
       }
     }
   }
@@ -33,14 +68,31 @@
   }
   &--image-wrapper {
     position: relative;
-    @media ($upto-medium) {
-      margin-bottom: 50px;
+    @media ($mobile) {
+      margin-bottom: 50px !important;
+      //margin-top: 65px !important;
+      max-width: 250px;
+      margin: 0 auto;
+    }
+    @media ($small) {
+      width: 100%;
+      max-width: 100%;
+    }
+    @media ($xl) {
+      width: 595px;
     }
     &::after {
-      @include position(absolute, -21px, -43px, auto, auto, -1);
+      @include position(absolute, -21px, -12px, auto, auto, -1);
       content: "";
       width: 137.016px;
       height: 148.86px;
+      @media ($mobile) {
+      }
+      @media ($medium) {
+        width: 121.016px;
+        height: 110.86px;
+        @include position(absolute, -21px, -26px, auto, auto, -1);
+      }
       @include backgroundSpecs(
         "/images/home/dot-bg.png",
         no-repeat,
@@ -55,10 +107,25 @@
       height: 308px;
       border-radius: 13px;
       background: linear-gradient(180deg, #9adaff 0%, #9ac2ff 100%);
-      @media ($upto-medium) {
+      @media ($mobile) {
         @include position(absolute, auto, -20px, -20px, auto, -1);
         width: 200px;
         height: 200px;
+      }
+      @media ($small) {
+        @include position(absolute, auto, -20px, -20px, auto, -1);
+        width: 400px;
+        height: 200px;
+      }
+      @media ($medium) {
+        @include position(absolute, auto, -20px, -20px, auto, -1);
+        width: 210px;
+        height: 150px;
+      }
+      @media ($large) {
+        @include position(absolute, auto, -20px, -20px, auto, -1);
+        width: 210px;
+        height: 150px;
       }
     }
   }
@@ -71,7 +138,13 @@
     margin-bottom: 0;
     margin-top: 22px;
     margin-left: 89px;
-    @media ($upto-medium) {
+    @media ($upto-small) {
+      margin-left: 0rem;
+    }
+    @media ($medium) {
+      margin-left: 0rem;
+    }
+    @media ($large) {
       margin-left: 0rem;
     }
     &::after {
@@ -89,6 +162,20 @@
     }
     img {
       @media ($mobile) {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      @media ($small) {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      @media ($medium) {
+        width: 100%;
+        height: 100%;
+      }
+      @media ($large) {
         width: 100%;
         height: 100%;
       }

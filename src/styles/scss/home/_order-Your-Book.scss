@@ -28,7 +28,7 @@
   }
   &--book-wrapper {
     .orderBook-Swiper {
-      padding-bottom: 60px;
+      //padding-bottom: 60px;
     }
   }
   &--header-title {
@@ -36,6 +36,9 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 4.25rem;
+    @media ($mobile) {
+      margin-bottom: 3rem;
+    }
     h2 {
       @include fontSpecs(4.125rem, 700, $quaternary-color, 5.3125rem, initial);
       span {
@@ -43,8 +46,21 @@
         color: $tertiary;
       }
       @media ($mobile) {
-        font-size: 2.5rem;
-        line-height: 3.3125rem;
+        font-size: 1.7rem;
+        line-height: 2rem;
+      }
+      @media ($small) {
+        font-size: 2rem;
+        line-height: 2.3rem;
+        margin-bottom: 0.58rem;
+      }
+      @media ($medium) {
+        line-height: 2.5rem;
+        font-size: 2.3rem;
+      }
+      @media ($large) {
+        line-height: 2.5rem;
+        font-size: 2.3rem;
       }
     }
   }

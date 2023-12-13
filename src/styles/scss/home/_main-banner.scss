@@ -9,6 +9,12 @@
   @media ($small) {
     padding-bottom: 240px;
   }
+  @media ($medium) {
+    padding-bottom: 180px;
+  }
+  @media ($large) {
+    padding-bottom: 180px;
+  }
   &::after {
     content: "";
     position: absolute;
@@ -32,6 +38,14 @@
       padding-top: 2.75rem;
       margin-bottom: 4rem;
     }
+    @media ($small) {
+      padding-top: 3.75rem;
+      margin-bottom: 3rem;
+    }
+    @media ($medium) {
+      padding-top: 3.75rem;
+      margin-bottom: 5rem;
+    }
     p {
       @include fontSpecs(2.92975rem, 700, $white, 5.27675rem, initial);
       letter-spacing: 2.34381rem;
@@ -43,13 +57,23 @@
         letter-spacing: 0.34381rem;
         margin-bottom: 5px;
       }
+      @media ($small) {
+        letter-spacing: 1rem;
+        font-size: 2rem;
+      }
+      @media ($medium) {
+        font-size: 2rem;
+      }
     }
     span {
       @include fontSpecs(2.60781rem, 400, $white, 1.76338rem, initial);
       font-family: $secondary-font;
       @media ($mobile) {
-        font-size: 2rem;
+        font-size: 1.3rem;
         line-height: 1rem;
+      }
+      @media ($small) {
+        font-size: 2rem;
       }
     }
   }
@@ -70,8 +94,17 @@
       height: 100%;
       margin: 0rem;
       flex-direction: column;
+      border: 5px solid #8bbaff;
+      border-radius: 30px;
     }
-
+    @media ($medium) {
+      margin: 0rem;
+      height: 460px;
+    }
+    @media ($large) {
+      margin: 0rem;
+      height: 460px;
+    }
     @include dflex(flex, center, space-between);
     &::after {
       content: "";
@@ -102,6 +135,14 @@
       text-align: center;
       order: 2;
     }
+    @media ($medium) {
+      padding-left: 55px;
+      max-width: 413px;
+    }
+    @media ($large) {
+      padding-left: 55px;
+      max-width: 413px;
+    }
     h1 {
       @include fontSpecs(3.125rem, 700, $white, 4.0625rem, initial);
       font-family: $tertiary-font;
@@ -110,14 +151,30 @@
         font-size: 2rem;
         line-height: 3rem;
       }
+      @media ($medium) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+      @media ($large) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
     }
     p {
       @include fontSpecs(2rem, 400, $white, 2.6875rem, initial);
       margin-bottom: 4.06rem;
       @media ($upto-small) {
-        font-size: 1.5rem;
+        font-size: 1rem;
         line-height: 2rem;
         margin-bottom: 3.06rem;
+      }
+      @media ($medium) {
+        font-size: 1.3rem;
+        line-height: 2rem;
+      }
+      @media ($large) {
+        font-size: 1.3rem;
+        line-height: 2rem;
       }
     }
   }
@@ -127,10 +184,24 @@
     @media ($upto-small) {
       height: 100%;
     }
+    @media ($medium) {
+      height: 100%;
+    }
+    @media ($large) {
+      height: 100%;
+    }
     img {
       width: 100%;
       object-fit: cover;
       @media ($upto-small) {
+        height: 100%;
+      }
+      @media ($medium) {
+        width: 100%;
+        height: 100%;
+      }
+      @media ($large) {
+        width: 100%;
         height: 100%;
       }
     }

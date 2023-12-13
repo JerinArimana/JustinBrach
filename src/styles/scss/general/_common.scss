@@ -22,15 +22,19 @@ button {
   font-family: $secondary-font;
   @media ($mobile) {
     margin: 0 auto;
+    font-size: 1rem;
+  }
+  @media ($small) {
+    margin: 0 auto;
   }
 }
 section + section {
   margin-top: 10.625rem;
   @media ($upto-medium) {
-    margin-top: 3rem;
+    margin-top: 6rem;
   }
   @media ($large) {
-    margin-top: 4rem;
+    margin-top: 5rem;
   }
 }
 .container {

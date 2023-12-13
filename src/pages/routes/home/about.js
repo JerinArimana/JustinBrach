@@ -9,7 +9,7 @@ const About = () => {
       <section className="justin-about">
         <Container>
           <Row>
-            <Col sm={12} md={12} lg={5}>
+            <Col sm={12} md={5} lg={5}>
               <div className="justin-about--about-image">
                 <Image
                   src="/images/home/about.png"
@@ -20,7 +20,7 @@ const About = () => {
                 />
               </div>
             </Col>
-            <Col sm={12} md={12} lg={7}>
+            <Col sm={12} md={7} lg={7}>
               <div className="justin-about--content">
                 <h2>About</h2>
                 <p>

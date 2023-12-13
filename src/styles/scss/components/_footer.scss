@@ -14,30 +14,35 @@
     @include dflex(flex, center, space-between);
     @media ($mobile) {
       flex-direction: column;
+      text-align: center;
+      gap: 30px;
     }
     @media ($small) {
       text-align: center;
       flex-direction: column;
+      gap: 2rem;
     }
     @media ($medium) {
       text-align: center;
       flex-direction: column;
+      gap: 2rem;
     }
   }
   &--subscribe {
     @media ($mobile) {
       text-align: center;
+      margin-bottom: 0rem;
     }
     p {
       @include fontSpecs(2.5rem, 400, $white, 4.0625rem, initial);
-      @media ($mobile) {
-        font-size: 1.5rem;
-      }
-      @media ($small) {
-        font-size: 1.5rem;
-      }
+
       @media ($upto-medium) {
+        font-size: 1.3rem;
+        line-height: 1rem;
+      }
+      @media ($large) {
         font-size: 1.5rem;
+        line-height: 1rem;
       }
     }
 
@@ -74,6 +79,9 @@
       @media ($medium) {
         height: 3.6875rem;
       }
+      @media ($large) {
+        height: 3.6875rem;
+      }
     }
     .btn {
       border-radius: 0rem 0.375rem 0.375rem 0rem;
@@ -93,6 +101,10 @@
         line-height: 2rem;
       }
       @media ($medium) {
+        line-height: 1rem;
+        font-size: 1rem;
+      }
+      @media ($large) {
         line-height: 1rem;
         font-size: 1rem;
       }
@@ -142,11 +154,14 @@
         2.9375rem,
         initial
       );
-      @media ($small) {
-        font-size: 1.5rem;
-      }
+
       @media ($upto-medium) {
         font-size: 1rem;
+        line-height: 1rem;
+      }
+      @media ($large) {
+        font-size: 1rem;
+        line-height: 1rem;
       }
     }
   }

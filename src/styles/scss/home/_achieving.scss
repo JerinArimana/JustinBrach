@@ -4,6 +4,15 @@
   @media ($mobile) {
     padding: 5rem 0rem;
   }
+  @media ($small) {
+    padding: 6rem 0rem;
+  }
+  @media ($medium) {
+    padding: 3rem 0rem;
+  }
+  @media ($large) {
+    padding: 3rem 0rem;
+  }
   &--image {
     position: relative;
     border-radius: 1.0625rem;
@@ -35,6 +44,15 @@
       @include position(absolute, auto, auto, 0, 0, 5);
       @include fontSpecs(3rem, 400, $white, 4.08019rem, initial);
       font-family: $secondary-font;
+      @media ($mobile) {
+        font-size: 1.7rem;
+      }
+      @media ($medium) {
+        font-size: 2rem;
+      }
+      @media ($large) {
+        font-size: 2.5rem;
+      }
     }
   }
   &--title-wrapper {
@@ -45,16 +63,40 @@
       @include fontSpecs(2.25rem, 400, $black, 4.08019rem, initial);
       font-family: $octonary-font;
       @media ($mobile) {
-        font-size: 2rem;
+        font-size: 1rem;
         line-height: 3rem;
+      }
+      @media ($small) {
+        font-size: 1.78rem;
+        line-height: 3rem;
+      }
+      @media ($medium) {
+        font-size: 1.78rem;
+        line-height: 3.08019rem;
+      }
+      @media ($large) {
+        font-size: 1.78rem;
+        line-height: 3.08019rem;
       }
     }
     p {
       @include fontSpecs(2.25rem, 400, $white, 2.9375rem, initial);
       font-family: $secondary-font;
       @media ($mobile) {
-        font-size: 1.4rem;
+        font-size: 1rem;
         line-height: 2rem;
+      }
+      @media ($small) {
+        font-size: 1.3rem;
+        line-height: 2rem;
+      }
+      @media ($medium) {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+      }
+      @media ($large) {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
       }
     }
   }

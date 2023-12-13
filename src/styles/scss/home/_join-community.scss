@@ -7,6 +7,12 @@
   @media ($small) {
     margin-top: -140px;
   }
+  @media ($medium) {
+    margin-top: -105px;
+  }
+  @media ($large) {
+    margin-top: -105px;
+  }
   &--wrapper {
     position: relative;
     overflow: hidden;
@@ -37,10 +43,28 @@
       z-index: 1;
     }
     @media ($mobile) {
-      padding: 10px;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-left: 10px;
+      padding-right: 10px;
     }
     @media ($small) {
-      padding: 15px;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    @media ($medium) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+    }
+    @media ($large) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 3rem;
+      padding-bottom: 2rem;
     }
   }
   &--title-header {
@@ -51,10 +75,22 @@
       @include fontSpecs(4.125rem, 700, $quaternary-color, 4.0625rem, initial);
       margin-bottom: 1.81rem;
       @media ($mobile) {
-        font-size: 3.125rem;
+        font-size: 1.7rem;
+        line-height: 2.5rem;
       }
       @media ($small) {
-        font-size: 2.125rem;
+        font-size: 2rem;
+        margin-bottom: 0.78rem;
+      }
+      @media ($medium) {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        line-height: 3rem;
+      }
+      @media ($large) {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        line-height: 3rem;
       }
     }
     span {
@@ -66,12 +102,20 @@
       font-family: $quaternary-font;
       @include fontSpecs(1.775rem, 400, $senary-color, 2.6875rem, initial);
       @media ($mobile) {
+        font-size: 1rem;
+        line-height: 1.7rem;
+      }
+      @media ($small) {
         font-size: 1.3rem;
         line-height: 2rem;
       }
-      @media ($small) {
+      @media ($medium) {
         font-size: 1.4rem;
-        line-height: 2.2rem;
+        line-height: 2rem;
+      }
+      @media ($large) {
+        font-size: 1.4rem;
+        line-height: 2rem;
       }
     }
   }
@@ -85,12 +129,26 @@
       @media ($upto-small) {
         gap: 1rem;
       }
+      @media ($medium) {
+        gap: 1rem;
+      }
+      @media ($large) {
+        gap: 1rem;
+      }
       li {
         img {
           margin-bottom: 0.82rem;
           @media ($upto-small) {
             max-width: 30px;
             max-height: 30px;
+          }
+          @media ($medium) {
+            max-width: 35px;
+            max-height: 35px;
+          }
+          @media ($large) {
+            max-width: 35px;
+            max-height: 35px;
           }
         }
         p {
@@ -102,8 +160,17 @@
             normal,
             initial
           );
-          @media ($upto-small) {
+          @media ($mobile) {
             font-size: 0.5rem;
+          }
+          @media ($small) {
+            font-size: 0.78rem;
+          }
+          @media ($medium) {
+            font-size: 1rem;
+          }
+          @media ($large) {
+            font-size: 1rem;
           }
         }
       }

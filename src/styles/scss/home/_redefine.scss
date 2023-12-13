@@ -4,6 +4,10 @@
     gap: 59px;
     @media ($mobile) {
       flex-direction: column;
+      margin-top: 4rem;
+    }
+    @media ($small) {
+      gap: 25px;
     }
   }
   &--content-wrapper {
@@ -11,26 +15,61 @@
       order: 2;
       text-align: center;
     }
+    @media ($small) {
+      margin-top: 0rem;
+      order: 2 !important;
+    }
+    @media ($large) {
+      max-width: 350px;
+    }
     p {
       span {
         @include fontSpecs(2rem, 700, $quaternary-color, normal, initial);
         @media ($mobile) {
-          font-size: 1.5rem;
+          font-size: 1rem;
+        }
+        @media ($small) {
+          font-size: 1.3rem;
+          line-height: 2rem;
+        }
+        @media ($medium) {
+          font-size: 1rem;
+          line-height: 2rem;
+        }
+        @media ($large) {
+          font-size: 1rem;
+          line-height: 2rem;
         }
       }
     }
   }
   &--image-wrapper {
     position: relative;
-    width: calc(100% - 713px - 59px);
+    width: calc(100% - 640px - 59px);
     z-index: 2;
     @media ($mobile) {
-      width: 100%;
-      margin-top: 65px;
+      width: 100% !important;
+      margin-top: 65px !important;
+      max-width: 250px;
+      margin: 0 auto;
     }
     @media ($small) {
-      width: 100%;
+      width: 100% !important;
+      margin-top: 102px !important;
       margin-top: 80px;
+      max-width: 300px;
+      margin: 0 auto;
+      max-width: 100%;
+      order: 2;
+    }
+    @media ($medium) {
+      width: 287px;
+    }
+    @media ($large) {
+      width: 287px;
+    }
+    @media ($upto-large) {
+      width: calc(100% - 350px - 59px);
     }
     img {
       width: 100%;
@@ -52,7 +91,8 @@
   }
   .section-header--subTitle {
     line-height: 2.75rem;
-    margin-bottom: 0.94rem;
+    margin-bottom: 1rem;
+    display: block;
   }
   &--label {
     @include fontSpecs(1.78rem, 400, $senary-color, 2.6875rem, initial);
@@ -61,9 +101,23 @@
     padding: 0.2rem 0.8rem;
     margin-bottom: 2rem;
     width: 27rem;
-    @media ($upto-small) {
+    @media ($mobile) {
       width: 100%;
-      font-size: 1.3rem;
+      font-size: 1rem;
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+    }
+    @media ($small) {
+      width: 20rem;
+      font-size: 1rem;
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+    }
+    @media ($upto-large) {
+      font-size: 1rem;
+      width: auto;
+      max-width: 16rem;
+      margin-bottom: 1.5rem;
     }
   }
 }

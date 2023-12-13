@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 // import './styles.css';
 
 // import required modules
-import { FreeMode, Pagination } from "swiper/modules";
+import { FreeMode, Pagination, Navigation } from "swiper/modules";
 import OrderYourBookData from "./orderYourBookData";
 const OrderYourBook = () => {
   const orderBook = [
@@ -55,10 +55,9 @@ const OrderYourBook = () => {
                 slidesPerView={6}
                 spaceBetween={18}
                 freeMode={true}
-                pagination={{
-                  clickable: true,
-                }}
-                modules={[FreeMode, Pagination]}
+                pagination={false}
+                modules={[FreeMode, Pagination, Navigation]}
+                navigation={false}
                 breakpoints={{
                   0: {
                     slidesPerView: 1,

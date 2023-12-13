@@ -3,15 +3,41 @@
     @include fontSpecs(4.125rem, 700, $quaternary-color, 4.0625rem, initial);
     margin-bottom: 0.69rem;
     @media ($mobile) {
-      font-size: 2.5rem;
+      font-size: 1.7rem;
+      line-height: 2rem;
+    }
+    @media ($small) {
+      font-size: 2rem;
+      line-height: 2.3rem;
+      margin-bottom: 0.58rem;
+    }
+    @media ($medium) {
+      line-height: 2rem;
+      font-size: 2.3rem;
+    }
+    @media ($large) {
+      line-height: 2rem;
+      font-size: 2.3rem;
     }
   }
   &--subTitle {
     @include fontSpecs(2.25rem, 400, $primary, 4.0625rem, initial);
     margin-bottom: 0.69rem;
     @media ($mobile) {
+      font-size: 1.3rem;
+      line-height: 2rem !important;
+    }
+    @media ($small) {
+      line-height: 1.78rem !important;
       font-size: 1.5rem;
-      line-height: 2rem;
+    }
+    @media ($medium) {
+      line-height: 2rem !important;
+      font-size: 1.5rem;
+    }
+    @media ($large) {
+      line-height: 2rem !important;
+      font-size: 1.5rem;
     }
   }
 }
