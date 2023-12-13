@@ -1,0 +1,17 @@
+.section-header {
+  &--title {
+    @include fontSpecs(4.125rem, 700, $quaternary-color, 4.0625rem, initial);
+    margin-bottom: 0.69rem;
+    @media ($mobile) {
+      font-size: 2.5rem;
+    }
+  }
+  &--subTitle {
+    @include fontSpecs(2.25rem, 400, $primary, 4.0625rem, initial);
+    margin-bottom: 0.69rem;
+    @media ($mobile) {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+.justin-youTube {
+  &--wrapper {
+    padding: 0 45px;
+    @include dflex(flex, center, space-between);
+    @media ($upto-medium) {
+      flex-direction: column;
+      padding: 0rem;
+    }
+    @media ($large) {
+      padding: 0rem;
+    }
+  }
+  &--content-wrapper {
+    max-width: 640px;
+    @media ($upto-medium) {
+      max-width: 100%;
+      order: 2;
+    }
+    @media ($large) {
+      max-width: 100%;
+    }
+    p {
+      @include fontSpecs(2rem, 400, $senary-color, 2.6875rem, initial);
+      margin-bottom: 2.56rem;
+      font-family: $secondary-font;
+      @media ($mobile) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &--button {
+    background-color: $tertiary;
+  }
+  &--image-wrapper {
+    position: relative;
+    @media ($upto-medium) {
+      margin-bottom: 50px;
+    }
+    &::after {
+      @include position(absolute, -21px, -43px, auto, auto, -1);
+      content: "";
+      width: 137.016px;
+      height: 148.86px;
+      @include backgroundSpecs(
+        "/images/home/dot-bg.png",
+        no-repeat,
+        cover,
+        center
+      );
+    }
+    &::before {
+      @include position(absolute, auto, -45px, -45px, auto, -1);
+      content: "";
+      width: 448px;
+      height: 308px;
+      border-radius: 13px;
+      background: linear-gradient(180deg, #9adaff 0%, #9ac2ff 100%);
+      @media ($upto-medium) {
+        @include position(absolute, auto, -20px, -20px, auto, -1);
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+  &--image-item {
+    border-radius: 12.701px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-right: 0rem;
+    margin-bottom: 0;
+    margin-top: 22px;
+    margin-left: 89px;
+    @media ($upto-medium) {
+      margin-left: 0rem;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: radial-gradient(
+        84.99% 85.63% at 50.05% 31.05%,
+        rgba(14, 72, 167, 0) 9.95%,
+        #0e48a7 100%
+      );
+    }
+    img {
+      @media ($mobile) {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &--voice-play {
+    @include position(absolute, auto, auto, 2.8rem, 0rem, 10);
+    @include dflex(flex, center, center);
+    gap: 1.7rem;
+    width: 100%;
+    cursor: pointer;
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
+}

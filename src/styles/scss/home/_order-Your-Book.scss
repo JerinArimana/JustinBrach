@@ -1,0 +1,51 @@
+.justin-order-your-book {
+  &--item {
+    height: 99.633px;
+    border-radius: 7.596px;
+    border-bottom: 1px solid #cdcdcd;
+    background: linear-gradient(
+      180deg,
+      #e3e3e3 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    box-shadow: -2px -1px 4px 0px rgba(0, 0, 0, 0.15);
+    height: 201.077px;
+    padding: 0px 39px;
+    cursor: pointer;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: grayscale(1);
+      transition: all 0.5s;
+    }
+    &:hover {
+      img {
+        filter: grayscale(0);
+        transition: all 0.5s;
+      }
+    }
+  }
+  &--book-wrapper {
+    .orderBook-Swiper {
+      padding-bottom: 60px;
+    }
+  }
+  &--header-title {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 4.25rem;
+    h2 {
+      @include fontSpecs(4.125rem, 700, $quaternary-color, 5.3125rem, initial);
+      span {
+        display: block;
+        color: $tertiary;
+      }
+      @media ($mobile) {
+        font-size: 2.5rem;
+        line-height: 3.3125rem;
+      }
+    }
+  }
+}

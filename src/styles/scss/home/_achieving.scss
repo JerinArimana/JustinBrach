@@ -1,0 +1,61 @@
+.justin-achiving {
+  padding: 11rem 0;
+  background: linear-gradient(0deg, #235193 0%, #235193 100%), #235193;
+  @media ($mobile) {
+    padding: 5rem 0rem;
+  }
+  &--image {
+    position: relative;
+    border-radius: 1.0625rem;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(
+        30deg,
+        rgba(14, 72, 167, 0.5) 33.48%,
+        rgba(108, 164, 255, 0.09) 64.91%,
+        rgba(0, 160, 255, 0.5) 89.35%
+      );
+    }
+    p {
+      color: white;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      @include position(absolute, auto, auto, 0, 0, 5);
+      @include fontSpecs(3rem, 400, $white, 4.08019rem, initial);
+      font-family: $secondary-font;
+    }
+  }
+  &--title-wrapper {
+    text-align: center;
+    max-width: 86.1875rem;
+    margin-bottom: 2.6rem;
+    h5 {
+      @include fontSpecs(2.25rem, 400, $black, 4.08019rem, initial);
+      font-family: $octonary-font;
+      @media ($mobile) {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+    }
+    p {
+      @include fontSpecs(2.25rem, 400, $white, 2.9375rem, initial);
+      font-family: $secondary-font;
+      @media ($mobile) {
+        font-size: 1.4rem;
+        line-height: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.header {
+  background-color: $primary;
+  padding: 1.81rem 0rem;
+  &--header-wrapper {
+    @include dflex(flex, center, space-between);
+  }
+  &--header-brand {
+    span {
+      @include fontSpecs(2.75rem, 400, $white, 2.655rem, initial);
+      font-family: $primary-font;
+      @media ($mobile) {
+        font-size: 2rem;
+      }
+    }
+  }
+  &--contact-button {
+    font-family: $secondary-font;
+    button {
+      &.button-btn {
+        background-color: $quinary-color;
+        height: 42px;
+      }
+    }
+  }
+}

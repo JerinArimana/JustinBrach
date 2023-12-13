@@ -1,0 +1,71 @@
+.justin-about {
+  background: linear-gradient(0deg, #011938 0%, #011938 100%),
+    linear-gradient(0deg, #235193 0%, #235193 100%),
+    linear-gradient(0deg, #1a1737 0%, #1a1737 100%),
+    linear-gradient(284deg, #1a1737 9.09%, #434f7a 94.8%);
+  padding-top: 5.31rem;
+  padding-bottom: 9.94rem;
+  @media ($mobile) {
+    padding-top: 2.31rem;
+    padding-bottom: 2.94rem;
+  }
+  &--section-wrapper {
+    @include dflex(flex, center, space-between);
+    gap: 6.19rem;
+  }
+  &--about-image {
+    position: relative;
+    z-index: 2;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &::after {
+      content: "";
+      background-position: center;
+      @include position(absolute, 0, 0, 0, 0, -1);
+      @include backgroundSpecs(
+        "/images/home/about-bg.png",
+        no-repeat,
+        cover,
+        center
+      );
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &--content > p {
+    margin-top: 30px;
+  }
+  &--content {
+    color: $white;
+    padding-top: 7.8rem;
+    padding-left: 6rem;
+    @media ($mobile) {
+      padding: 5px;
+      text-align: center;
+    }
+    @media ($small) {
+      padding-left: 0rem;
+    }
+    h2 {
+      @include fontSpecs(4.125rem, 700, $white, 4.0625rem, initial);
+      margin-bottom: 3rem;
+      @media ($mobile) {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        font-size: 2.5rem;
+      }
+    }
+    p {
+      @include fontSpecs(1.6rem, 400, $white, 2.6875rem, initial);
+      font-family: $secondary-font;
+      @media ($mobile) {
+        font-size: 1.2rem;
+        line-height: 2rem;
+      }
+    }
+  }
+}

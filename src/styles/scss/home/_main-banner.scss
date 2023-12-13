@@ -1,0 +1,146 @@
+.justin-banner {
+  position: relative;
+  @include backgroundSpecs("/images/home/banner.png", no-repeat, cover, center);
+  width: 100%;
+  padding-bottom: 468px;
+  @media ($mobile) {
+    padding-bottom: 200px;
+  }
+  @media ($small) {
+    padding-bottom: 240px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgb(1, 25, 56);
+    background: rgb(3, 31, 67);
+    background: linear-gradient(
+      0deg,
+      rgba(3, 31, 67, 1) 56%,
+      rgba(5, 36, 77, 0.5215336134453781) 100%
+    );
+  }
+
+  &--title-head {
+    padding-top: 6.75rem;
+    margin-bottom: 7rem;
+    text-align: center;
+    @media ($mobile) {
+      padding-top: 2.75rem;
+      margin-bottom: 4rem;
+    }
+    p {
+      @include fontSpecs(2.92975rem, 700, $white, 5.27675rem, initial);
+      letter-spacing: 2.34381rem;
+      text-transform: uppercase;
+      margin-bottom: 1px;
+      @media ($mobile) {
+        font-size: 2rem;
+        line-height: 4rem;
+        letter-spacing: 0.34381rem;
+        margin-bottom: 5px;
+      }
+    }
+    span {
+      @include fontSpecs(2.60781rem, 400, $white, 1.76338rem, initial);
+      font-family: $secondary-font;
+      @media ($mobile) {
+        font-size: 2rem;
+        line-height: 1rem;
+      }
+    }
+  }
+  &--wrapper {
+    position: relative;
+    z-index: 5;
+    left: 0;
+    width: 100%;
+  }
+  &--introduction-warapper {
+    position: relative;
+    margin: 0rem 4.813rem;
+    border-radius: 41px;
+    border: 9px solid #8bbaff;
+    overflow: hidden;
+    height: 785px;
+    @media ($upto-small) {
+      height: 100%;
+      margin: 0rem;
+      flex-direction: column;
+    }
+
+    @include dflex(flex, center, space-between);
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: linear-gradient(
+        91deg,
+        rgba(7, 35, 71, 0) -35%,
+        rgb(7, 35, 71) 17%,
+        rgb(7, 35, 71) 7%,
+        rgba(7, 35, 71, 0) 100%
+      );
+      z-index: 5;
+    }
+  }
+  &--content {
+    max-width: 613px;
+    z-index: 6;
+    position: absolute;
+    padding-left: 89px;
+    @media ($upto-small) {
+      padding: 10px;
+      max-width: 100%;
+      position: relative;
+      text-align: center;
+      order: 2;
+    }
+    h1 {
+      @include fontSpecs(3.125rem, 700, $white, 4.0625rem, initial);
+      font-family: $tertiary-font;
+      margin-bottom: 1.4rem;
+      @media ($upto-small) {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+    }
+    p {
+      @include fontSpecs(2rem, 400, $white, 2.6875rem, initial);
+      margin-bottom: 4.06rem;
+      @media ($upto-small) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 3.06rem;
+      }
+    }
+  }
+  &--image-wrapper {
+    margin-left: auto;
+    height: 785px;
+    @media ($upto-small) {
+      height: 100%;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      @media ($upto-small) {
+        height: 100%;
+      }
+    }
+  }
+  &--banner-btn {
+    background-color: $primary;
+    padding: 15px 60px;
+    @media ($upto-small) {
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+  }
+}

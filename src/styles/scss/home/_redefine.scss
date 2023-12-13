@@ -1,0 +1,69 @@
+.redefine-justin {
+  &--section-wrapper {
+    @include dflex(flex, center, space-between);
+    gap: 59px;
+    @media ($mobile) {
+      flex-direction: column;
+    }
+  }
+  &--content-wrapper {
+    @media ($mobile) {
+      order: 2;
+      text-align: center;
+    }
+    p {
+      span {
+        @include fontSpecs(2rem, 700, $quaternary-color, normal, initial);
+        @media ($mobile) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  &--image-wrapper {
+    position: relative;
+    width: calc(100% - 713px - 59px);
+    z-index: 2;
+    @media ($mobile) {
+      width: 100%;
+      margin-top: 65px;
+    }
+    @media ($small) {
+      width: 100%;
+      margin-top: 80px;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+    &::after {
+      content: "";
+      @include position(absolute, auto, 0, 55px, auto, -1);
+      @include backgroundSpecs(
+        "/images/home/redefine-bg.png",
+        no-repeat,
+        cover,
+        center
+      );
+      width: 80%;
+      height: 100%;
+    }
+  }
+  .section-header--subTitle {
+    line-height: 2.75rem;
+    margin-bottom: 0.94rem;
+  }
+  &--label {
+    @include fontSpecs(1.78rem, 400, $senary-color, 2.6875rem, initial);
+    margin-bottom: 2rem;
+    background: #e1eaf3;
+    padding: 0.2rem 0.8rem;
+    margin-bottom: 2rem;
+    width: 27rem;
+    @media ($upto-small) {
+      width: 100%;
+      font-size: 1.3rem;
+    }
+  }
+}
