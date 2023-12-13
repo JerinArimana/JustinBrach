@@ -23,7 +23,7 @@
       text-align: center;
     }
     @media ($large) {
-      max-width: 550px;
+      max-width: 550px !important;
     }
     @media ($small) {
       margin-top: 5rem;
