@@ -33,8 +33,20 @@
       text-align: center;
       margin-bottom: 0rem;
     }
+    .input-group {
+      width: 37.1875rem;
+      @media ($mobile) {
+        width: auto;
+      }
+      @media ($medium) {
+        width: auto;
+      }
+      @media ($large) {
+        width: auto;
+      }
+    }
     p {
-      @include fontSpecs(2.5rem, 400, $white, 4.0625rem, initial);
+      @include fontSpecs(1.78rem, 400, $white, 4.0625rem, initial);
 
       @media ($upto-medium) {
         font-size: 1.3rem;
@@ -88,7 +100,7 @@
       background: #235193;
       color: white;
       padding: 1rem 3rem;
-      @include fontSpecs(1.625rem, 400, $white, 2.6875rem, initial);
+      @include fontSpecs(1.625rem, 400, $white, 1.6875rem, initial);
       font-family: $secondary-font;
       @media ($mobile) {
         padding: 0rem 2rem;
