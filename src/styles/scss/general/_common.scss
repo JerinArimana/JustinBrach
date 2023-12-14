@@ -58,4 +58,10 @@ section + section {
 }
 .landing-page-main {
   margin-top: 100px;
+  @media ($mobile) {
+    margin-top: 85px;
+  }
+  @media ($small) {
+    margin-top: 85px;
+  }
 }
