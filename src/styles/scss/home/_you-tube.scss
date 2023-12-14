@@ -39,7 +39,7 @@
       width: calc(100% - 470px - 28px);
     }
     p {
-      @include fontSpecs(2rem, 400, $senary-color, 2.6875rem, initial);
+      @include fontSpecs(1.78rem, 400, $senary-color, 2.6875rem, initial);
       margin-bottom: 2.56rem;
       font-family: $secondary-font;
       @media ($mobile) {

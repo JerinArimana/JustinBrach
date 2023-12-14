@@ -161,7 +161,7 @@
       }
     }
     p {
-      @include fontSpecs(2rem, 400, $white, 2.6875rem, initial);
+      @include fontSpecs(1.78rem, 400, $white, 2.6875rem, initial);
       margin-bottom: 4.06rem;
       @media ($upto-small) {
         font-size: 1rem;
