@@ -35,6 +35,7 @@ const YouTube = () => {
                     width={287}
                     height={74}
                     alt=""
+                    className="voice"
                     // style={{ width: '100%', height: '100%' }} // optional
                   />
                   <Image
@@ -42,6 +43,7 @@ const YouTube = () => {
                     width={103}
                     height={72}
                     alt=""
+                    className="icon-ytb"
                     // style={{ width: '100%', height: '100%' }} // optional
                   />
                 </div>

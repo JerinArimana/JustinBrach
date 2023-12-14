@@ -2,6 +2,7 @@
   &--wrapper {
     padding: 0 45px;
     @include dflex(flex, center, space-between);
+    gap: 28px;
     @media ($upto-small) {
       flex-direction: column;
       padding: 0rem;
@@ -11,7 +12,7 @@
       padding: 0rem;
     }
     @media ($medium) {
-      //padding: 0 25px;
+      padding: 0 10px;
       flex-direction: row;
     }
   }
@@ -23,7 +24,7 @@
       text-align: center;
     }
     @media ($large) {
-      max-width: 550px !important;
+      width: calc(100% - 350px - 28px);
     }
     @media ($small) {
       margin-top: 5rem;
@@ -31,11 +32,11 @@
       order: 2;
     }
     @media ($medium) {
-      max-width: 350px;
+      width: calc(100% - 350px - 28px);
       padding-right: 10px;
     }
     @media ($xl) {
-      width: calc(100% - 595px);
+      width: calc(100% - 470px - 28px);
     }
     p {
       @include fontSpecs(2rem, 400, $senary-color, 2.6875rem, initial);
@@ -78,8 +79,14 @@
       width: 100%;
       max-width: 100%;
     }
+    @media ($medium) {
+      width: 350px;
+    }
+    @media ($large) {
+      width: 350px;
+    }
     @media ($xl) {
-      width: 595px;
+      width: 470px;
     }
     &::after {
       @include position(absolute, -21px, -12px, auto, auto, -1);
@@ -137,7 +144,7 @@
     margin-right: 0rem;
     margin-bottom: 0;
     margin-top: 22px;
-    margin-left: 89px;
+    //margin-left: 89px;
     @media ($upto-small) {
       margin-left: 0rem;
     }
@@ -190,6 +197,28 @@
     img {
       width: auto;
       height: auto;
+    }
+  }
+  .voice {
+    @media ($mobile) {
+      max-width: 45%;
+    }
+    @media ($medium) {
+      max-width: 45%;
+    }
+    @media ($large) {
+      max-width: 45%;
+    }
+  }
+  .icon-ytb {
+    @media ($mobile) {
+      max-width: 20%;
+    }
+    @media ($medium) {
+      max-width: 20%;
+    }
+    @media ($large) {
+      max-width: 20%;
     }
   }
 }

@@ -26,6 +26,13 @@ button {
   }
   @media ($small) {
     margin: 0 auto;
+    font-size: 1rem;
+  }
+  @media ($medium) {
+    font-size: 1rem;
+  }
+  @media ($large) {
+    font-size: 1rem;
   }
 }
 section + section {
